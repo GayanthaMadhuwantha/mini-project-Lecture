@@ -76,7 +76,7 @@ public class Ad_marks extends JFrame {
         s15= Integer.parseInt(textField1.getText());
         s16= Integer.parseInt(textField1.getText());
 
-        try ( Connection connection = DriverManager.getConnection("jdbc:mysql://localhost/project", "root", "mycomputer");){
+        try ( Connection connection = DriverManager.getConnection("jdbc:mysql://localhost/project", "root", "");){
             Statement se = connection.createStatement();
 
             ResultSet re = se.executeQuery("insert into '" + Lecture.cb + "'('" + Ex_type + "') values ('" +  s1+"'),('" +  s2+"'),('" +  s3+"'),('" +  s4+"'),('" +  s5+"'),('" +  s6+"'),('" +  s7+"'),('" +  s8+"'),('" +  s9+"'),('" +  s10+"'),('" +  s11+"'),('" +  s12+"'),('" +  s13+"'),('" +  s14+"'),('" +  s15+"'),('" +  s16+"')");
